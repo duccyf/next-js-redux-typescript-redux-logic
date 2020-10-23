@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const urlGetData = 'https://cors-anywhere.herokuapp.com/https://www.flickr.com/services/feeds/photos_public.gne?format=json&nojsoncallback=1&tags='
+const overCors = 'https://cors-anywhere.herokuapp.com/'
+const urlGetData = `${overCors}https://www.flickr.com/services/feeds/photos_public.gne?format=json&nojsoncallback=1&tags=`
 
 export const getDataByTags = (tags: string = 'macro,fly') => {
   return axios.get(`${urlGetData}${tags}`)
