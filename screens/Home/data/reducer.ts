@@ -2,7 +2,7 @@ import {AnyAction} from 'redux';
 import * as types from './actionTypes';
 
 const initialState = {
-  data: {},
+  data: [],
   isLoading: false,
 };
 
